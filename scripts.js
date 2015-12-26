@@ -7,3 +7,7 @@
 // message += visitor;
 // message += ". Please come back again soon!";
 // document.write(message);
+
+var passphrase = 'Open Sesame';
+document.write(passphrase.length);
+console.log(passphrase.length);
