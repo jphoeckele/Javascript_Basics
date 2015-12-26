@@ -8,6 +8,11 @@
 // message += ". Please come back again soon!";
 // document.write(message);
 
-var passphrase = 'Open Sesame';
-document.write(passphrase.length);
-console.log(passphrase.length);
+// var passphrase = 'Open Sesame';
+// document.write(passphrase.length);
+// console.log(passphrase.length);
+
+var stringToShout = prompt("What should I shout?");
+var shout = stringToShout.toUpperCase();
+shout += "!!!";
+alert(shout);
