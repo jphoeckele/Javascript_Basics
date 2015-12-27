@@ -32,20 +32,30 @@
 // document.write(sentence1 + sentence2 + sentence3 + sentence4);
 
 
+// var adjective = prompt('Please type an adjective');
+// var verb = prompt('Please type a verb');
+// var noun = prompt('Please type a noun' + questionsLeft);
+// alert('All done. Ready for the message?');
+// var sentence = "<h2>There once was a " + adjective;
+// sentence += ' programmer who wanted to use JavaScript to ' + verb;
+// sentence += ' the ' + noun + '.</h2>';
+// document.write(sentence);
+
 
 /* Seconds Alive Counter */
-var secondsPerMin = 60;
-var minPerHour = 60;
-var hourPerDay = 24;
-var secondsPerDay = secondsPerMin * minPerHour * hourPerDay;
-// document.write("There are " + secondsPerDay + " in a day!");
-var daysPerYear = 365;
-var yearsAlive = prompt("How old are you?");
-var secondsPerYear = secondsPerDay * daysPerYear;
-var ageInSeconds = secondsPerYear * yearsAlive;
-document.write("<h1>You have been alive for more than " + ageInSeconds + " seconds!!!");
+// var secondsPerMin = 60;
+// var minPerHour = 60;
+// var hourPerDay = 24;
+// var secondsPerDay = secondsPerMin * minPerHour * hourPerDay;
+// // document.write("There are " + secondsPerDay + " in a day!");
+// var daysPerYear = 365;
+// var yearsAlive = prompt("How old are you?");
+// var secondsPerYear = secondsPerDay * daysPerYear;
+// var ageInSeconds = secondsPerYear * yearsAlive;
+// document.write("<h1>You have been alive for more than " + ageInSeconds + " seconds!!!");
 
-
+var dieRoll = Math.floor(Math.random() * 6 ) + 1;
+alert("You rolled a " + dieRoll) + "!";
 
 
 
