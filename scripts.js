@@ -56,7 +56,8 @@
 
 var userNum = prompt("Please enter a number");
 var dieRoll = Math.floor(Math.random() * userNum ) + 1;
-alert("You rolled a " + dieRoll) + "!";
+var message = "<p>" + dieRoll + " is a number between 1 and " + userNum + "!";
+document.write(message);
 
 
 
