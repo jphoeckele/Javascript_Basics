@@ -17,15 +17,35 @@
 // shout += "!!!";
 // alert(shout);
 
-var userName = prompt("What is your name?");
-alert("Nice to meet you " + userName);
-alert("We're going to write a short story");
-var location = prompt("Please enter the name of a city.");
-alert("Good Choice!");
-var animal = prompt("Please, enter your favorite type of animal.");
-var animalName = prompt("Enter one more name, please.");
-var day = prompt("Alright, now enter a day of the week.");
-document.write("Once there was a beautiful princess named " + userName + " " + <br>);
-document.write("Princess " + userName + " lived in the magical kindom of " + location + "." + <br>);
-document.write(userName + " had a giant " + animal + " named " + animalName + "." + <br>);
-document.write(animalName + " was so big that she was only fed on " + day + "s.");
+// var userName = prompt("What is your name?");
+// alert("Nice to meet you " + userName);
+// alert("We're going to write a short story");
+// var location = prompt("Please enter the name of a city.");
+// alert("Good Choice!");
+// var animal = prompt("Please, enter your favorite type of animal.");
+// var animalName = prompt("Enter one more name, please.");
+// var day = prompt("Alright, now enter a day of the week.");
+// var sentence1 = ("Once there was a beautiful princess named " + userName + " ");
+// var sentence2 = ("Princess " + userName + " lived in the magical kindom of " + location + ".");
+// var sentence3 = (userName + " had a giant " + animal + " named " + animalName + ".");
+// var sentence4 = (animalName + " was so big that she was only fed on " + day + "s.");
+// document.write(sentence1 + sentence2 + sentence3 + sentence4);
+
+
+
+/* Seconds Alive Counter */
+var secondsPerMin = 60;
+var minPerHour = 60;
+var hourPerDay = 24;
+var secondsPerDay = secondsPerMin * minPerHour * hourPerDay;
+// document.write("There are " + secondsPerDay + " in a day!");
+var daysPerYear = 365;
+var yearsAlive = prompt("How old are you?");
+var secondsPerYear = secondsPerDay * daysPerYear;
+var ageInSeconds = secondsPerYear * yearsAlive;
+document.write("<h1>You have been alive for more than " + ageInSeconds + " seconds!!!");
+
+
+
+
+
