@@ -54,7 +54,8 @@
 // var ageInSeconds = secondsPerYear * yearsAlive;
 // document.write("<h1>You have been alive for more than " + ageInSeconds + " seconds!!!");
 
-var dieRoll = Math.floor(Math.random() * 6 ) + 1;
+var userNum = prompt("Please enter a number");
+var dieRoll = Math.floor(Math.random() * userNum ) + 1;
 alert("You rolled a " + dieRoll) + "!";
 
 
