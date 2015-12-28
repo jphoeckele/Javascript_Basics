@@ -129,10 +129,10 @@ if (parseInt(question5) === 20) {
 }
 if (total === 0){
 	document.write("Ummm.... Ok?");
-} else if (total === 1)
-	document.write("What the hell buddy? You only got " + total + " question correct!");
-} else if (total === 2 || total ===3)
-	document.write("Not bad. You got " + total + " questions correct!");
+} else if (total === 1) {
+document.write("What the hell buddy? You only got " + total + " question correct!");
+} else if (total === 2 || total ===3) {
+document.write("Not bad. You got " + total + " questions correct!");
 } else if (total === 4) {
 	document.write("Not too shabby! You got " + total + " questions correct!");
 } else {
@@ -141,6 +141,12 @@ if (total === 0){
 
 
 
-
+if (total === 1){
+	alert("What the hell buddy? You only got " + total + " question correct!");
+} else if (total <= 4) {
+	alert("Not bad. You got " + total + " questions correct!");
+} else {
+	alert("Congratulations, you answered " + total + " questions correct. You're almost a 3rd grader!")
+}
 
 
