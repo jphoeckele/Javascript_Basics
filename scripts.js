@@ -54,10 +54,15 @@
 // var ageInSeconds = secondsPerYear * yearsAlive;
 // document.write("<h1>You have been alive for more than " + ageInSeconds + " seconds!!!");
 
-var userNum = prompt("Please enter a number");
-var dieRoll = Math.floor(Math.random() * userNum ) + 1;
-var message = "<p>" + dieRoll + " is a number between 1 and " + userNum + "!";
-document.write(message);
+// var userNum = prompt("Please enter a number");
+// var dieRoll = Math.floor(Math.random() * userNum ) + 1;
+// var message = "<p>" + dieRoll + " is a number between 1 and " + userNum + "!";
+// document.write(message);
 
-
+var answer = prompt("What programming language is the name of a gem?");
+if ( answer.toUpperCase() === "RUBY") {
+document.write("<p>That's right!</p>");
+} else {
+	document.write("<p>Sorry, that's incorrect.</p>");
+}
 
