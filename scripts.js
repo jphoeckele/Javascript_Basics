@@ -68,41 +68,63 @@
 // }
 
 
-//Assumes that the player guessed incorrectly
-var correctGuess = false;
-//Generates a random number between 1 and 6
-var randomNumber = Math.floor(Math.random() * 6) + 1;
-var guess = prompt("I am thinking of a number between 1 and 6. What is it?");
-/*Tests to see if the player is 
-	1. correct
-	2. guessed too high
-	3. guessed to low
-*/
-if (randomNumber === parseInt(guess)) {
-	correctGuess = true;
-}	else if (parseInt(guess) < randomNumber) {
-	var guessMore = prompt('Try again, the number I am thinking of is more than ' + guess + ".");
-	if (randomNumber === parseInt(guessMore)) {
-		correctGuess = true;
-	}
-} else if (parseInt(guess) > randomNumber) {
-	var guessLess = prompt('Try again, the number I am thinking of is less than ' + guess + ".");
-	if (randomNumber === parseInt(guessLess)) {
-		correctGuess = true;
-	}
+// Assumes that the player guessed incorrectly
+// var correctGuess = false;
+// //Generates a random number between 1 and 6
+// var randomNumber = Math.floor(Math.random() * 6) + 1;
+// var guess = prompt("I am thinking of a number between 1 and 6. What is it?");
+// /*Tests to see if the player is 
+// 	1. correct
+// 	2. guessed too high
+// 	3. guessed to low
+// */
+// if (randomNumber === parseInt(guess)) {
+// 	correctGuess = true;
+// }	else if (parseInt(guess) < randomNumber) {
+// 	var guessMore = prompt('Try again, the number I am thinking of is more than ' + guess + ".");
+// 	if (randomNumber === parseInt(guessMore)) {
+// 		correctGuess = true;
+// 	}
+// } else if (parseInt(guess) > randomNumber) {
+// 	var guessLess = prompt('Try again, the number I am thinking of is less than ' + guess + ".");
+// 	if (randomNumber === parseInt(guessLess)) {
+// 		correctGuess = true;
+// 	}
+// }
+// // Test if player is correct and produes output
+// if (correctGuess) {
+// 	document.write('<p>You guessed correctly');
+// } else {
+// 	document.write('<p>Sorry, but ' + guess + ' was not the correct number.<br>The number I was thinking of was ' + randomNumber + "!");
+// }
+var total = 0
+var question1 = prompt("What is 2 + 2 ?");
+if (parseInt(question1) === 4) {
+	total += 1;
 }
-// Test if player is correct and produes output
-if (correctGuess) {
-	document.write('<p>You guessed correctly');
+var question2 = prompt("What is 4 + 4 ?");
+if (parseInt(question2) === 8) {
+	total += 1;
+}
+var question3 = prompt("What is 6 + 6 ?");
+if (parseInt(question3) === 12) {
+	total += 1;
+}
+var question4 = prompt("What is 8 + 8 ?");
+if (parseInt(question4) === 16) {
+	total += 1;
+}
+var question5 = prompt("What is 10 + 10 ?");
+if (parseInt(question5) === 20) {
+	total += 1;
+}
+if (total === 1){
+	alert("What the hell buddy? You only got " + total + " question correct!");
+} else if (total <= 4) {
+	alert("Not bad. You got " + total + " questions correct!");
 } else {
-	document.write('<p>Sorry, but ' + guess + ' was not the correct number.<br>The number I was thinking of was ' + randomNumber + "!");
+	alert("Congratulations, you answered " + total + " questions correct. You're almost a 2nd grader!")
 }
-
-
-
-
-
-
 
 
 
