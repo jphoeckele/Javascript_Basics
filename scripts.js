@@ -67,9 +67,17 @@
 // 	document.write("<p>Sorry, that's incorrect.</p>");
 // }
 
+
+//Assumes that the player guessed incorrectly
 var correctGuess = false;
+//Generates a random number between 1 and 6
 var randomNumber = Math.floor(Math.random() * 6) + 1;
 var guess = prompt("I am thinking of a number between 1 and 6. What is it?");
+/*Tests to see if the player is 
+	1. correct
+	2. guessed too high
+	3. guessed to low
+*/
 if (randomNumber === parseInt(guess)) {
 	correctGuess = true;
 }	else if (parseInt(guess) < randomNumber) {
@@ -83,6 +91,7 @@ if (randomNumber === parseInt(guess)) {
 		correctGuess = true;
 	}
 }
+// Test if player is correct and produes output
 if (correctGuess) {
 	document.write('<p>You guessed correctly');
 } else {
