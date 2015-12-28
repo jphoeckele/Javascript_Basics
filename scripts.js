@@ -72,6 +72,16 @@ var randomNumber = Math.floor(Math.random() * 6) + 1;
 var guess = prompt("I am thinking of a number between 1 and 6. What is it?");
 if (randomNumber === parseInt(guess)) {
 	correctGuess = true;
+}	else if (parseInt(guess) < randomNumber) {
+	var guessMore = prompt('Try again, the number I am thinking of is more than ' + guess + ".");
+	if (randomNumber === parseInt(guessMore)) {
+		correctGuess = true;
+	}
+} else if (parseInt(guess) > randomNumber) {
+	var guessLess = prompt('Try again, the number I am thinking of is less than ' + guess + ".");
+	if (randomNumber === parseInt(guessLess)) {
+		correctGuess = true;
+	}
 }
 if (correctGuess) {
 	document.write('<p>You guessed correctly');
