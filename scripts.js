@@ -118,12 +118,16 @@ var question5 = prompt("What is 10 + 10 ?");
 if (parseInt(question5) === 20) {
 	total += 1;
 }
-if (total === 1){
+if (total === 0){
+	alert("Ummm.... Ok?");
+} else if (total === 1)
 	alert("What the hell buddy? You only got " + total + " question correct!");
-} else if (total <= 4) {
+} else if (total === 2 || total ===3)
 	alert("Not bad. You got " + total + " questions correct!");
+} else if (total <= 4) {
+	alert("Not too shabby! You got " + total + " questions correct!");
 } else {
-	alert("Congratulations, you answered " + total + " questions correct. You're almost a 2nd grader!")
+	alert("Congratulations, you answered " + total + " questions correct. You can do math like a 2nd grader!")
 }
 
 
