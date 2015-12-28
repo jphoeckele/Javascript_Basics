@@ -1,12 +1,14 @@
 // var visitorName = prompt("What is your name?");
 // alert(visitorName);
 
+
 // var visitor = prompt("What is your name?");
 // var message = "Hello " + visitor + "! " + "Welcome to my JavaScript examples";
 // message += "I'm so glad that you decided to stop by, ";
 // message += visitor;
 // message += ". Please come back again soon!";
 // document.write(message);
+
 
 // var passphrase = 'Open Sesame';
 // document.write(passphrase.length);
@@ -16,6 +18,7 @@
 // var shout = stringToShout.toUpperCase();
 // shout += "!!!";
 // alert(shout);
+
 
 // var userName = prompt("What is your name?");
 // alert("Nice to meet you " + userName);
@@ -59,6 +62,8 @@
 // var message = "<p>" + dieRoll + " is a number between 1 and " + userNum + "!";
 // document.write(message);
 
+
+
 /*********** Conditional Statements *************/
 // var answer = prompt("What programming language is the name of a gem?");
 // if ( answer.toUpperCase() === "RUBY") {
@@ -66,6 +71,7 @@
 // } else {
 // 	document.write("<p>Sorry, that's incorrect.</p>");
 // }
+
 
 
 // Assumes that the player guessed incorrectly
@@ -97,6 +103,9 @@
 // } else {
 // 	document.write('<p>Sorry, but ' + guess + ' was not the correct number.<br>The number I was thinking of was ' + randomNumber + "!");
 // }
+
+
+
 var total = 0
 var question1 = prompt("What is 2 + 2 ?");
 if (parseInt(question1) === 4) {
@@ -119,15 +128,15 @@ if (parseInt(question5) === 20) {
 	total += 1;
 }
 if (total === 0){
-	alert("Ummm.... Ok?");
+	document.write("Ummm.... Ok?");
 } else if (total === 1)
-	alert("What the hell buddy? You only got " + total + " question correct!");
+	document.write("What the hell buddy? You only got " + total + " question correct!");
 } else if (total === 2 || total ===3)
-	alert("Not bad. You got " + total + " questions correct!");
-} else if (total <= 4) {
-	alert("Not too shabby! You got " + total + " questions correct!");
+	document.write("Not bad. You got " + total + " questions correct!");
+} else if (total === 4) {
+	document.write("Not too shabby! You got " + total + " questions correct!");
 } else {
-	alert("Congratulations, you answered " + total + " questions correct. You can do math like a 2nd grader!")
+	document.write("Congratulations, you answered " + total + " questions correct. You can do math like a 2nd grader!")
 }
 
 
