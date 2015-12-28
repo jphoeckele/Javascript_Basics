@@ -69,10 +69,10 @@
 
 var randomNumber = Math.floor(Math.random() * 6) + 1;
 var guess = prompt("I am thinking of a number between 1 and 6. What is it?");
-if (randomNumber === parseInt(guess) {
+if (randomNumber === parseInt(guess)) {
 	alert("You guessed correctly")
 } else {
-	alert("Sorry, but " + guess + " was not the correct number.<br>The correct number was " + randomNumber + "!")
+	alert("Sorry, but " + guess + " was not the correct number.")
 }
 
 
