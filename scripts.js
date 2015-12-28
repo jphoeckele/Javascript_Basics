@@ -67,12 +67,16 @@
 // 	document.write("<p>Sorry, that's incorrect.</p>");
 // }
 
+var correctGuess = false;
 var randomNumber = Math.floor(Math.random() * 6) + 1;
 var guess = prompt("I am thinking of a number between 1 and 6. What is it?");
 if (randomNumber === parseInt(guess)) {
-	document.write('<p>You guessed correctly')
+	correctGuess = true;
+}
+if (correctGuess) {
+	document.write('<p>You guessed correctly');
 } else {
-	document.write('<p>Sorry, but ' + guess + ' was not the correct number.<br>The number I was thinking of was ' + randomNumber + "!")
+	document.write('<p>Sorry, but ' + guess + ' was not the correct number.<br>The number I was thinking of was ' + randomNumber + "!");
 }
 
 
