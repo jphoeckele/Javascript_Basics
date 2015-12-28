@@ -59,10 +59,30 @@
 // var message = "<p>" + dieRoll + " is a number between 1 and " + userNum + "!";
 // document.write(message);
 
-var answer = prompt("What programming language is the name of a gem?");
-if ( answer.toUpperCase() === "RUBY") {
-document.write("<p>That's right!</p>");
+/*********** Conditional Statements *************/
+// var answer = prompt("What programming language is the name of a gem?");
+// if ( answer.toUpperCase() === "RUBY") {
+// document.write("<p>That's right!</p>");
+// } else {
+// 	document.write("<p>Sorry, that's incorrect.</p>");
+// }
+
+var randomNumber = Math.floor(Math.random() * 6) + 1;
+var guess = prompt("I am thinking of a number between 1 and 6. What is it?");
+if (randomNumber === parseInt(guess) {
+	alert("You guessed correctly")
 } else {
-	document.write("<p>Sorry, that's incorrect.</p>");
+	alert("Sorry, but " + guess + " was not the correct number.<br>The correct number was " + randomNumber + "!")
 }
+
+
+
+
+
+
+
+
+
+
+
 
