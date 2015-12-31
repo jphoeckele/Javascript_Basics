@@ -167,12 +167,22 @@
 
 /********** Function Practice ***********/
 
-function alertRandom() {
+// function alertRandom() {
+// 	var randomNumber = Math.floor(Math.random() * 6) + 1;
+// 	document.write(randomNumber);
+// }
+// alertRandom();
+
+/***** Return number using multiple mediums *****/
+
+function getRandomNumber() {
 	var randomNumber = Math.floor(Math.random() * 6) + 1;
-	document.write(randomNumber);
+	return(randomNumber);
 }
 
+document.write( getRandomNumber() );
+console.log( getRandomNumber() );
+alert( getRandomNumber() );
+var dieRoll = getRandomNumber();
 
-alertRandom();
-alertRandom();
-alertRandom();
+
