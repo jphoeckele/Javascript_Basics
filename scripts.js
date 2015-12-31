@@ -175,14 +175,22 @@
 
 /***** Return number using multiple mediums *****/
 
-function getRandomNumber() {
-	var randomNumber = Math.floor(Math.random() * 6) + 1;
+// function getRandomNumber() {
+// 	var randomNumber = Math.floor(Math.random() * 6) + 1;
+// 	return(randomNumber);
+// }
+
+// document.write( getRandomNumber() );
+// console.log( getRandomNumber() );
+// alert( getRandomNumber() );
+// var dieRoll = getRandomNumber();
+
+/***** Sending information from a function *****/
+
+function getRandomNumber( upper ) {
+	var randomNumber = Math.floor(Math.random() * upper) + 1;
 	return(randomNumber);
 }
 
-document.write( getRandomNumber() );
-console.log( getRandomNumber() );
-alert( getRandomNumber() );
-var dieRoll = getRandomNumber();
-
+alert(getRandomNumber(987765432));
 
