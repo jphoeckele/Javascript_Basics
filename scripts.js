@@ -187,10 +187,23 @@
 
 /***** Sending information from a function *****/
 
-function getRandomNumber( upper ) {
-	var randomNumber = Math.floor(Math.random() * upper) + 1;
-	return(randomNumber);
+// function getRandomNumber( upper ) {
+// 	var randomNumber = Math.floor(Math.random() * upper) + 1;
+// 	return(randomNumber);
+// }
+
+// alert(getRandomNumber(987765432));
+
+/***** Function that produces random numbers between 2 numbers *****/
+
+function getRandomNumber( lower, upper ) {
+	return Math.floor(Math.random() * upper - lower) + lower;
+
 }
 
-alert(getRandomNumber(987765432));
+document.write(getRandomNumber(1,100), "<br>");
+document.write(getRandomNumber(100,1000), "<br>");
+document.write(getRandomNumber(1000,10000), "<br>");
+document.write(getRandomNumber(10000,100000), "<br>");
+
 
