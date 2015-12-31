@@ -197,13 +197,20 @@
 /***** Function that produces random numbers between 2 numbers *****/
 
 function getRandomNumber( lower, upper ) {
+	if ( isNaN(lower) || isNaN(upper) ) {
+	throw new Error('One of the parameters is not a number.');
+} else {
 	return Math.floor(Math.random() * upper - lower) + lower;
-
+	}
 }
 
 document.write(getRandomNumber(1,100), "<br>");
 document.write(getRandomNumber(100,1000), "<br>");
 document.write(getRandomNumber(1000,10000), "<br>");
 document.write(getRandomNumber(10000,100000), "<br>");
+
+if ( upper || lower ) {
+	throw new Error('One of the parameters is not a number.');
+}
 
 
